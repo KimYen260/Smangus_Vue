@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import axios from 'axios' //主要AJAX套件
 import VueAxios from 'vue-axios' //將它轉為Vue的套件
+import '@fortawesome/fontawesome-free/css/all.css'
+import '@fortawesome/fontawesome-free/js/all.js'
 
 Vue.config.productionTip = false
 Vue.use(VueAxios,axios)
