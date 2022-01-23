@@ -1,8 +1,17 @@
 <template>
   <header class="main_nav">
     <ul class="nav_list">
-      <li><img class="nav_logo" src="../assets/logoB.png" alt="logo"/></li>
-      <li>News</li>
+      <li>
+        <router-link :to="'/'">
+          <img class="nav_logo" src="../assets/logoB.png" alt="logo"
+        /></router-link>
+      </li>
+
+      <li>
+        <router-link :to="'/home'">
+        News
+        </router-link>
+        </li>
       <li>所有行程</li>
       <li>裝備租借</li>
       <li>系列商品</li>

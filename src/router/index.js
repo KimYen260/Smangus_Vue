@@ -7,19 +7,10 @@ Vue.use(Router)
 //網址列
 export default new Router({
   routes: [
-    { //所有的進入點
+    { //首頁
       path: '/',
       name: 'index',
       component: index
-    },
-    { //所有的進入點
-      path: '/home',
-      name: 'index',
-      component: home
-    },{ //所有的進入點
-      path: '/product',
-      name: 'product',
-      component: product
     }
   ]
 })
