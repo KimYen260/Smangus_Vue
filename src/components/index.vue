@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="cover"></div>
+    <div class="coverHome"></div>
     <div class="section_planning ">
       <div class="sectionBox mt-95"><span>開始計劃</span></div>
       <form class="planForm " action="#" method="post">
@@ -157,6 +157,7 @@
 </template>
 
 <script>
+
 export default {
   name: "index",
   data() {
@@ -165,4 +166,6 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style> 
+
+</style>

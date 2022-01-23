@@ -8,15 +8,15 @@
       </li>
 
       <li>
-        <router-link :to="'/home'">
+        <router-link :to="'/'">
         News
         </router-link>
         </li>
-      <li>所有行程</li>
-      <li>裝備租借</li>
-      <li>系列商品</li>
-      <li><i class="fas fa-suitcase-rolling"></i></li>
-      <li><i class="fas fa-user-alt"></i></li>
+      <li><router-link :to="'/'">所有行程</router-link></li>
+      <li><router-link :to="'/'">裝備租借</router-link></li>
+      <li><router-link :to="'/'">系列商品</router-link></li>
+      <li><router-link :to="'/'"><i class="fas fa-suitcase-rolling"></i></router-link></li>
+      <li><router-link :to="'/'"><i class="fas fa-user-alt"></i></router-link></li>
     </ul>
   </header>
 </template>
@@ -45,6 +45,7 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #000000;
+  text-decoration: none;
 }
 </style>
