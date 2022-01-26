@@ -1,6 +1,7 @@
 <template>
   <main>
     <div class="coverHome"></div>
+    <div class="serviceWrap"><service></service></div>
     <div class="section_planning ">
       <div class="sectionBox"><span class="planText">開始計劃</span></div>
       <form class="planForm " action="#" method="post">
@@ -11,17 +12,15 @@
               <option value="2">台東</option>
               <option value="3">宜蘭</option>
             </select></label>
-        </div>
-
-        <div class="typeSelection">
-          <label
-            >活動類別：<br />
+  
+          <label>活動類別：<br />
             <select name="activity" class="selection">
               <option value="1" selected>登山</option>
               <option value="2">溯溪</option>
             </select>
           </label>
         </div>
+
         <div class="largeSelection">
           <div class="smallSelection">
             <label class="time"
@@ -57,63 +56,20 @@
       </form>
     </div>
     <!-- -----------------------------表格--------------------------------------- -->
-    <div class="logo_belt mb-95 mt-95">
-        <img class="logo" src="#" alt="SmangusLogo" />
-        <span>smangus</span>
-      </div>
-      <div class="section_attractive_rental">
-        <div class="description">裝備租借</div>
-        <div class="viewPanel">
-          <div class="wrap">
-            <div class="products">
-              <a href="#"
-                ><img class="att-products" data-lazy="#" alt="rental_pic"
-              /></a>
-            </div>
-            <div class="products">
-              <a href="#"
-                ><img class="att-products" data-lazy="#" alt="rental_pic"
-              /></a>
-            </div>
-            <div class="products">
-              <a href="#"
-                ><img class="att-products" data-lazy="#" alt="rental_pic"
-              /></a>
-            </div>
-            <div class="products">
-              <a href="#"
-                ><img class="att-products" data-lazy="#" alt="rental_pic" />
-              </a>
-            </div>
-            <div class="products">
-              <a href="#"
-                ><img class="att-products" data-lazy="#" alt="rental_pic"
-              /></a>
-            </div>
-            <div class="products">
-              <a href="#"
-                ><img class="att-products" data-lazy="#" alt="rental_pic"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section_ourservice">
-        <span class="title">Our Service</span>
-        <div class="paragraph">
-          <p class="knowledgeInfo">
-            smangus秉持著小而美的品質，採取1:6~8的嚮導/指導員與夥伴比例，除了能更仔細的照顧參與的夥伴們外，同時也能有更充裕的時間與夥伴們交流戶外經驗。在從事戶外活動過程中，有許多未知的自然風
-          </p>
-          <a class="knowledgeInfo" href="#">read more</a>
-        </div>
-      </div>
+ 
+      <carousal></carousal>
       
+
   </main>
 </template>
 
 <script>
+import carousal from './carousal.vue';
+import service from './service.vue';
 
 export default {
+  components: { carousal, service },
+ 
   name: "index",
   data() {
     return {};
@@ -121,6 +77,14 @@ export default {
 };
 </script>
 
-<style> 
+<style lang='scss' scoped> 
+@import '../scss/main.scss';
 
+  .serviceWrap{
+    width: 460px;
+    padding: 25px;
+    background-color: $tertiary-color;
+    color: $content-color;
+    box-sizing: border-box;
+  }
 </style>

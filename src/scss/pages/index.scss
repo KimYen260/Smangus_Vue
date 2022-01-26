@@ -7,21 +7,21 @@ main{
   }
 
   .section_planning{
-    border: 5px solid green;
     margin-top: 150px;
     display: flex;
     justify-content: center;
-    background-color: green;
+    // color: $content-color;
    
     .sectionBox{
-      border: 5px solid rgb(241, 241, 241);
+      // border: 5px solid rgb(241, 241, 241);
+      background-color: $primary-color;
       margin-right: 50px;
       width: 480px;
       height: 480px;
       font-size: 40px;
       display: flex;
       justify-content: end;
-      // font-family: Source Han Serif K;
+    
       .planText{
         padding-top: 30px;
         padding-right: 25px;
@@ -30,7 +30,8 @@ main{
         letter-spacing: 5px;
         border: 1px solid red;
         display: block;
-      
+        color: $content-color;
+
 
       }
   
@@ -38,8 +39,21 @@ main{
 
     .planForm {
       box-sizing: border-box;
-      width: 480px;
+      width: 500px;
+      height:250px;
+      border:3px solid blue;
+      justify-content: flex-end;
 
+
+      .typeSelection {
+        display: flex;
+        border:3px solid blue;
+        justify-content: flex-end;
+      }
+      .largeSelection{
+        // display: flex;
+        // flex-wrap: nowrap;
+      }
     }
   }
 

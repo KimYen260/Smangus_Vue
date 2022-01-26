@@ -1,9 +1,11 @@
+//variables
+@import './variables/variables';
+
 //helper
 @import "./helper/normalize.scss";
 
 //base 
 @import './base/navbar.scss';
-
 
 //pages
 @import './pages/index.scss'
