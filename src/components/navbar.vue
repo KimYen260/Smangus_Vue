@@ -4,7 +4,7 @@
           <img class="nav_logo" src="../assets/logoB.png" alt="logo"
         /></router-link>
     <ul class="nav_list">
-      <li><router-link :to="'/news'">News</router-link></li>
+      <li><router-link :to="'/team'">團隊介紹</router-link></li>
       <li><router-link :to="'/trips'">所有行程</router-link></li>
       <li><router-link :to="'/'">裝備租借</router-link></li>
       <li><router-link :to="'/products'">系列商品</router-link></li>

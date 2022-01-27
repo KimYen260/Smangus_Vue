@@ -134,18 +134,137 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+div.list-descriptions{
+    display:flex;
+    border-bottom:2px solid rgb(85, 85, 85);
+    padding-bottom: 1.5rem;
+    width: 100%;
+    max-width: 71.25rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    justify-content: space-between;
+
+  }
+  
+  div.list-descriptions>div.aList{
+    display: block;
+    width:100%;
+    padding:0;
+    text-decoration:none;
+    color:black;
+    /* border-bottom: 1.8px; */
+    border:2px solid transparent;
+    
+  }
+
+  
+  div.list-descriptions>img.left-img{
+    display: block;
+    width: 100%;
+    max-height:500px;
+    max-width:600px;
+    border-radius:8px;
+    background-size: cover;
+    padding-right: 40px;
+  }
+  
+  ul.descriptionUl{
+    list-style:none;
+    padding:0 ;
+    margin:0;
+  }
+  
+  ul.descriptionUl>li.title{
+    font-size:28px;
+    padding-bottom:30px;
+    padding-top:20px;
+    font-weight:900;
+    text-align:justify;
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 2px;
+  }
+  
+  ul.descriptionUl>li.description{
+    font-size:.875rem;
+    overflow: hidden;
+  /*   text-overflow: ellipsis; */
+    -webkit-box-orient: vertical;
+    height:3.125rem;
+    width: 100%;
+    padding: 0 0 1.65rem 0;
+    letter-spacing:3px;
+    line-height:24px;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+  }
+  
+  ul.descriptionUl>li>ul.description-inside{
+    display: block;
+    list-style:disc;
+    padding-left:20px;
+    padding-bottom:20px;
+    padding-top:20px;
+    font-size: 14px;
+    min-height: 7.2rem;
+    letter-spacing:3px;
+    line-height:20px;
+    /* border: 1px solid black; */
+  }
+  
+  ul.descriptionUl>li.price{
+    display:flex;
+    justify-content:flex-end;
+    margin-right:10px;
+    align-items:baseline;
+    /* padding-bottom:60px;
+    padding-right: 20px; */
+  }
+  
+  li.price div.caption{
+    font-size:14px;
+    padding-right:10px;
+  }
+  
+  li.price div.dollar{
+    font-size:30px;
+    font-weight:900;
+  }
+
+  li.li_btn{
+    width:100%;
+  }
+  button.btn_submit {
+    width: 100%;
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  
+  button.btn_submit:hover {
+    color: white;
+    background-color: #3B8DBF;
+    border: 1px solid transparent;
+  }
+  
+ li.price>a:hover>button.btn_submit{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  a>button.btn_submit {
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+  }
 </style>
