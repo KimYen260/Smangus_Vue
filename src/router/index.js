@@ -4,6 +4,7 @@ import index from '../components/index.vue'
 import products from '../components/productMenu.vue'
 import team from '../components/team.vue'
 import trips from '../components/classicTrips.vue'
+import rent from '../components/rent.vue'
 
 Vue.use(Router)
 
@@ -29,6 +30,11 @@ export default new Router({
       path: '/trips',
       name: 'trips',
       component: trips
+    },
+    { //rent
+      path: '/rent',
+      name: 'rent',
+      component: rent
     }
   ]
 })

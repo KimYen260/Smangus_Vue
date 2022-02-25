@@ -1,0 +1,71 @@
+.section_professional_team {
+    width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 48px;
+  
+    .team.title {
+      font-size: $font-title;
+      justify-content: center;
+      @include flexrow(nowrap);
+    }
+  
+    .teamMember {
+    
+      display: flex;
+      margin-top: 50px;
+      align-items: space-between;
+      justify-content: space-between;
+      vertical-align: middle;
+  
+      .guider-content {
+        text-align: left;
+        width: 400px;
+
+        .subtitle1{
+            font-size: $font-sub;
+            letter-spacing: 0%;
+            line-height: $font-sub;
+            margin-bottom: 1.5rem;
+            margin-top: 0rem;
+            font-family: "Noto Serif TC", serif;
+        }
+
+        .content1{
+            font-size: $font-s;
+        }
+
+        .title1{
+            font-size: $font-mainSub;
+            box-sizing: border-box;
+            letter-spacing: 2%;
+            line-height: $font-sub;
+            margin-bottom: 1rem;
+            margin-top: 0rem;
+            font-family: "futura-pt", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .quote {
+            font-size: $font-s;
+            line-height: ($font-s * 1.8);
+            letter-spacing: 0.07em;
+            /* margin-top: 35px; */
+            box-sizing: border-box;
+          }
+
+      }
+  
+      .guider-photo_1 {
+        border-radius: 50%;
+        margin: 0 48px;
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+  
+  
+  
+  

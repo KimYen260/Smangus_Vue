@@ -2,10 +2,17 @@
 @import './variables/variables';
 
 //helper
-@import "./helper/normalize.scss";
+@import './helper/normalize';
+@import './helper/mixin';
 
 //base 
-@import './base/navbar.scss';
+@import './base/navbar';
+
+//components
+@import './components/carousal.scss';
 
 //pages
-@import './pages/index.scss'
+@import './pages/index';
+@import './pages/trips';
+@import './pages/products';
+@import './pages/team';

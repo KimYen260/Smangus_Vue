@@ -1,7 +1,8 @@
 //font-size
 $font-s: 15px;
 $font-title: ($font-s * 3);
-$font-sub: ($font-s * 1.25);
+$font-mainSub: ($font-s * 2.3);
+$font-sub: ($font-s * 1.8);
 
 //color
 $primary-color: #1D2601;
@@ -9,3 +10,9 @@ $secondary-color: lighten($primary-color,10%);
 $tertiary-color: #D7CA8C;
 
 $content-color: #fff;
+
+.title{
+    padding-bottom: ($font-s * 3);
+    padding-top: ($font-s * 3);
+    font-family: "Noto Serif TC", serif;
+}

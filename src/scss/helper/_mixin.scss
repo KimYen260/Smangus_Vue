@@ -1,0 +1,81 @@
+//======= position ======= 
+@mixin absolute($top, $right, $bottom:null, $left:null, $z-index:null) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    z-index: $z-index;
+  }
+  @mixin relative($top, $right, $bottom:null, $left:null, $z-index:null) {
+    position: relative;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    z-index: $z-index;
+  }
+  @mixin fixed($top, $right, $bottom:null, $left:null, $z-index:null) {
+    position: fixed;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    z-index: $z-index;
+  }
+  //======= width ======= 
+  @mixin box($width, $heigh:null) {
+    width: $width;
+    height: $heigh;
+  }
+  @mixin sqbox($width) {
+    width: $width;
+    height: $width;
+  }
+  //======= layout ======= 
+  @mixin blockcenter() {
+    margin: 0 auto;
+  }
+  @mixin flexrow($wrap) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: $wrap;
+  }
+  @mixin flexcolumn($wrap) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: $wrap;
+  }
+  @mixin flexs($grow, $shrink, $basis) {
+    flex-grow: $grow;
+    flex-shrink: $grow;
+    flex-basis: $basis;
+  }
+  // @include flexs(0, 0, auto);
+  //font
+  @mixin font($fs, $fw, $linehigh, $tspace:null) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $linehigh;
+    letter-spacing: $tspace;
+  }
+  @mixin lg-desktop {
+    @media(min-width:$lg_bkpoint) {
+      @content;
+    }
+  }
+  @mixin latop {
+    @media(max-width:$m_bkpoint) {
+      @content;
+    }
+  }
+  @mixin pad {
+    @media(max-width:$s_bkpoint) {
+      @content;
+    }
+  }
+  @mixin mobile {
+    @media(max-width:$xs_bkpoint) {
+      @content;
+    }
+  }
